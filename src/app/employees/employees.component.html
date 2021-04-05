@@ -1,0 +1,18 @@
+<table  >
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Salary</th>
+  </tr>
+  <tr *ngFor="let employee of employees" (click)="onSelect(employee)">
+    <a routerLink = "/employeeDetail/{{employee.id}}">
+      <td>{{employee.id}}</td>
+      <td>{{employee.name}}</td>
+      <td>{{employee.salary}}</td>
+    </a>
+  </tr>
+</table>
+<!-- <div *ngIf="selectedEmployee">
+  Selected Employee is {{selectedEmployee.name}}
+  </div> -->
+  <!-- <app-employee-detail [employee]="selectedEmployee"></app-employee-detail> -->

@@ -1,0 +1,17 @@
+<p>add-employees works!</p>
+
+<div *ngIf="employee">
+  <div>Id: {{employee.id}}</div>
+  <div>Name: {{employee.name}}</div>
+  <div>Salary: {{employee.salary}}</div>
+</div>
+
+<div>
+  <label for="emp-id">Employee Id:</label>
+  <input id="emp-id" placeholder="id" [(ngModel)]="employee.id"/>
+  <label for="emp-name">Employee Name:</label>
+  <input id="emp-name" placeholder="name" [(ngModel)]="employee.name"/>
+  <label for="emp-salary">Employee Salary:</label>
+  <input id="emp-salary" type="number" placeholder="salary" [(ngModel)]="employee.salary"/>
+  <button (click)="submit(employee)">Add Employee</button>
+</div>

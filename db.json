@@ -1,0 +1,29 @@
+{
+  "employees": [
+    {
+      "id": "zxc",
+      "name": "kurt",
+      "salary": 4500
+    },
+    {
+      "id": "wer",
+      "name": "edge",
+      "salary": 5500
+    },
+    {
+      "id": "werw",
+      "name": "edge",
+      "salary": 5500
+    },
+    {
+      "id": "123123",
+      "name": "Pikachu",
+      "salary": 2312312
+    },
+    {
+      "id": "12",
+      "name": "Charmander",
+      "salary": 2312312
+    }
+  ]
+}
