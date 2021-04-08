@@ -6,12 +6,22 @@
   <div>Salary: {{employee.salary}}</div>
 </div>
 
-<div>
-  <label for="emp-id">Employee Id:</label>
-  <input id="emp-id" placeholder="id" [(ngModel)]="employee.id"/>
-  <label for="emp-name">Employee Name:</label>
-  <input id="emp-name" placeholder="name" [(ngModel)]="employee.name"/>
-  <label for="emp-salary">Employee Salary:</label>
-  <input id="emp-salary" type="number" placeholder="salary" [(ngModel)]="employee.salary"/>
-  <button (click)="submit(employee)">Add Employee</button>
-</div>
+<form>
+  <mat-form-field>
+    <mat-label>Employee Id:</mat-label>
+    <input matInput id="emp-id" placeholder="id" [(ngModel)]="employee.id" name="id"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Employee Name:</mat-label>
+    <input matInput id="emp-name" placeholder="name" [(ngModel)]="employee.name" name="emp-name"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Employee Salary:</mat-label>
+    <input matInput id="emp-salary" placeholder="salary" [(ngModel)]="employee.salary" name="salary"/>
+  </mat-form-field>
+
+  <button (click)="submit(employee)" mat-flat-button color="primary">Add Employee</button>
+</form>
+{{ count$ | async }}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MessageService } from '../message.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { MessageService } from '../message.service';
 })
 export class MessageComponent implements OnInit {
   // messages: string[] = []
+  @Input() msg: string;
 
   constructor(private messageService: MessageService) { }
 

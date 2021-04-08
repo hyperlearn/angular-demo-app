@@ -1,7 +1,9 @@
 <div *ngIf="getMessages()">
   <h3>Messages</h3>
   <ul *ngFor="let message of getMessages()">
-    <li>{{message}}</li>
+    <li><mat-card>{{message}}</mat-card></li>
   </ul>
-  <button type="reset" (click)="reset()"> reset</button>
+  <button type="reset" (click)="reset()" mat-flat-button color="warn"> reset</button>
+  {{msg}}
 </div>
+<app-counter></app-counter>

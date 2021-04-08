@@ -1,6 +1,6 @@
 <div>Details Page</div>
 <div *ngIf="employee">
-  <h3>{{ employee.name }}</h3>
-  <h4>{{employee.id}}</h4>
-  <h4>{{employee.salary}}</h4>
+  <h3>{{ employee.name | capitalize }}</h3>
+  <h4>{{employee.id | uppercase}}</h4>
+  <h4>{{employee.salary | currency:"INR" }}</h4>
 </div>

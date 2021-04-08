@@ -1,6 +1,7 @@
 <h3>Employees</h3>
-<router-outlet></router-outlet>
-
+<mat-divider></mat-divider>
 <div>
-  <app-message></app-message>
+<router-outlet></router-outlet>
 </div>
+<mat-divider></mat-divider>
+<app-message [msg]="childMsg"></app-message>

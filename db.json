@@ -24,6 +24,11 @@
       "id": "12",
       "name": "Charmander",
       "salary": 2312312
+    },
+    {
+      "id": "asdasdasd",
+      "name": "123123",
+      "salary": "12312"
     }
   ]
 }
